@@ -22,11 +22,11 @@ pluginconfdir = $(sysconfdir)/mmc/plugins
 
 if ENABLE_CONF
 dist_pluginconf_DATA = mail.ini sshlpk.ini userquota.ini bulkimport.ini shorewall.ini radius.ini
-nodist_pluginconf_DATA = samba.ini samba4.ini network.ini proxy.ini squid.ini
+nodist_pluginconf_DATA = samba.ini samba4.ini network.ini proxy.ini squid.ini fpt.ini
 endif
 
 EXTRA_DIST = samba.ini.in samba4.ini.in network.ini.in proxy.ini.in squid.ini.in
-CLEANFILES = samba.ini samba4.ini network.ini proxy.ini squid.ini
+CLEANFILES = samba.ini samba4.ini network.ini proxy.ini squid.ini fpt.ini
 
 if ENABLE_CONF_BACKUP
 INSTALL += --backup=numbered

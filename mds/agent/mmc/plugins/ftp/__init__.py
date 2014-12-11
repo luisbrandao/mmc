@@ -1,10 +1,9 @@
-import re
 import logging
 from os.path import exists
 from os import mkdir
 from mmc.core.version import scmRevision
 from mmc.support.mmctools import shLaunch
-from mmc.support.config import PluginConfig, ConfigException
+from mmc.support.config import PluginConfig
 from ConfigParser import NoSectionError, NoOptionError
 from mmc.plugins.ftp.ftp import Ftp
 
